@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Robby's below average website</title>
+        <style>
+            body {
+                background: rgb(1, 211, 255);
+                color: rgb(45, 45, 45);
+                padding: 15px;
+                font-family: arial;
+            }
+            header {
+                font-size: 1.5em;
+                font-weight: bold;
+            }
+            #all-contents {
+                max-width: 800px;
+                max-height: 8000px;
+                margin: auto;
+            }
+    
+            /* navigation menu */
+            nav {
+                background: rgb(255, 2, 111);
+                margin: 0 auto;
+                display: flex;
+                padding: 10px;
+            }
+            nav header {
+                display: flex;
+                align-items: center;
+                color: rgb(255,255, 255);
+                flex: 1;
+            }
+            nav ul {
+                list-style-image: none;
+            }
+            nav li {
+                display: inline-block;
+                padding: 0 111px;
+            }
+        
+            nav a {
+                text-decoration: none;
+                color: rgb(1, 255, 000);
+            }
+    
+            /* main container area beneath menu */
+            main {
+                background: rgb(255, 255, 255);
+                display: flex;
+            }
+            .sidebar {
+                margin-right: 0px;
+                padding: 20px;
+            }
+            .sidebar img {
+                width:300px;
+            }
+            .content {
+                flex: 1;
+                padding: 15px;
+            }
+            .interests header {
+                font-size: 1.25em;
+            }
+        </style>
+    </head>
+    <body>
+        <div id=all-contents>
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                        </ul>
+                    </nav>
+            <main>                
+                <div class=sidebar>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACoCAMAAABt9SM9AAABVlBMVEUAAAD///9LrlHv7+8fHx/W1tYDAANAlEO+vr5Kn0wAAAbJycnf39/6+vrs7OwAAAXPz8+pqaloaGhRUVE2NjYaGhpZWVkkJCQWFhaQkJBjY2N1dXWvr6+bm5vi4uJ8fHxDQ0PCwsKJiYkAABA4ODgvLy+ampq1tbV4eHj/3AFKSkqDg4NLr05MrVNVVVX/4BT/1xMAABXmyB5QRhVdUxUUHhRNkUwSAg8RCgvbxBRRSg4iHxImHw1IQBYhFgxeUxgVFQaiiiKSgB3cxSDp0BuxmSQrIBAkJAypmx2AbxO3nSdvZBcqVC07Zz8ADgAgMyU9cj8YLhYqTzQwJwc7fj8gOx4IGABZrmROnFhCdUkcRB3NriA5eEI/lUKfgyrPux8+OxiAaxN2aRdiVCdGNxdUQhfApxxzYxU1KBaNfiyskCptWh7RvxPqxifJtieVfwsKJAswcDMwIE7vAAAUV0lEQVR4nO2d/VvbRrbHx3asgGxZMq8GG2MjbDCxsddAyoZQCpg2NGk32Sa73dB707KEJM3S3v3/f7nnzJtkW5KtSII4j75PUyTNaOT5eF7OnJmRCflcdS+V+Nx010jcFcPyoRiWD8WwfCiG5UMxLB+aPFiq85miKkTXHeLDRcUjOUXeBH911SPmJMICQCJLCohnVcWs6opihaiK/Q5d1S12qrxMkxIRTdUT6yTC0lXr6wcIhFHQiW6qqm6PJeioOsrxfriuWuxHFawJhGXOyyyp+jcFcQLUDgpWZs2DfasowYnt/gMLDpyYVoh68EXBgtyZp92//vkNtFWm+t3xabd3eoKli6g/nd10u6cnUL7g7P1Zt9u9OMcyo+uH191e9+ISC5+i71xDyB/v4BDOjzDkjyMsgyrZveh1e9c7xIQ67AJtsmBBtvbajUaj+xEovOt24LDRvjkCKJe9DgY03ryFWCcQ0G63G2+uoI792WlgUOfiPVTAMwyBaNePgTY9aXc61/um/vV1p423dJ6Ypq1Vm2RY2AAdnn/fabS7F13M8/n5NeT45g2enF2eXzQwpNdo9M7enVy0G+3TN70OnPx28h88ueh0Gt3jdyddgHLzBqB1//ztpNvodP7zBlP5E0KQ6rHp8vTJgoUtMPDaOW3QUnSFrfhRD8oKlKL3GPqxh+Wm88e+CrXsXQ8D2tdfQdXSeWm7NqENU48xoNE5I6pJaGlrtDvHaDuYT+CLaLu1XZMFS+rp8e/HT2k3BtXp8vjs+IggHji9hJAdZn6p5vnx2ckhtaAI+frD2e8nv7JjcnD++9nJe/YFkO8w5L3KTt5/OPtgupgQkwlLQVuAZdtkYHSTmwS6tJwUHsLvwW5AZ5EUKJHSttAVHo3dhDYI+aJKFlqjKrM68YAZl9SWgnqlcFsT/yi6ZbZCN6kwgGC9ws3cvlJoe66wewAhpu3y2AmFhQWL54keKcI4ZZeFDQoGgiIwUpteZ4Rp8dNt5r7o/mhM/csqWXekGJYPxbB8KIblQzEsH4ph+VAMy4diWD4Uw/KhkbBS1akQlf6iYT0I+Xlz5eCwKkbGWMeDVTigV1YymRK9PEtPi0amyuOuGJmNAh6sGRmpPA+Ea1MFfpTScsZSwfvBI2CFzYqQwsh6PzKJdYi0iQcZOKjgQS6RmCLbcLZMIyxZqUBIgoIt2Z6Q5oFwLTUPf2viG8wteD7YG1bZP4yRqgeGRSBvtHBkIfYqHkAm6mTWDktjMecxwSIe2WFleTp5wDPP0kvkshr8X1v3eq43rNIn4fDWbHBYaSxIQAKLDVKraIjJCdaMzMVWsVjcxPgzxeIyT4fDWoXLKwWyiDyrw0+z5A2r+KlEvDSqHo5OocQKRwVjIzVEsu8IK49RDHnjQJY4rKqoQlBStZrHcz1hpfBOdCEqemBZHrWNwLA2WaxljI3ZXKNwnGAZCU1LaGLWsOAMCxhl6PmqTOETYNG6jahGf/7RQkccPXgQGBY25fcooxSNvkFLjxMsgJnhnQDxgsVasfVEamPL47mesOoYA2cjqTMxoOQijkJgWIspigUYwX812oblHWHVoOeDkyVvWFWIThkV5ryf6wmLdqSAau/n6RD0TFTEEabWaFiYQh0Z5aBrnaH2wQNHWFD2SjOsXfOABbES6REm1khYKRZFIa+TIaj50PYZA8Kq0i6unEgXsdjMpagt5QALCt7almUBucAiaDSUK8FgVQWs580QWLWmxTMXAsNaQsOypiUy60htgd2EsB5sgSp5AQtK4Mx8SibpBquIj9VmAsFaE5EeBmcFsFqvRHqBYRWRxhbWL6RWZGWHGnAaiP7lD9LmkNiyNyze5+TJCHnBEibHXisEWMlW8wfx0ExQWGiFonVVJ9hY1Fmr1GftUljL9G9GYnCFRWYp4cynw8qxGAp51gyBVrPZui8euhQUFhq2i0vYuJcBxxQY4BxWaalery9VOaw6HQauSArusEgBelQtkd0nXvKAJUvlL2HAwnooEqwFhgVZW4bWexZAabU0q2cIiw2E1zisKu0HNqXV5QGLDx4N4iUPWNKWnQ6hfYda2Eq+FinmgsKCbK5VcWwCxWYZjMpF4tQbpqiJhddro2GxhmuNeMgDlojyIgxWCKv5i0jSc8QzDiwoO/k0NutQbJZyzMgZgrWuoTMhi2bdgzFg0U7R08/iDkuWyOetUGghMLEyuBgUFlgL1Rw2SHNQ0/hnHYK1aaVZ8oI1u2QwKwm/w8onwaqLKGEYDhzWHoe1GBTWvpbIaRQB5BdGPY6w0NyqZjJAlRcYF1iGCK8kvB0t7rAk4lYo7TvVD6Joefnix4HF/DwP7AfDsIQ3QRr0LrA2hGdmMeHtG3aFxcY6MDB83UyGBQuMB0V+zGCwqgmOhtpsW06w0IGNJgV1dy14wMJwOtZeT3yii4YNPlVCXkKvHxasloC1HRQW9IIJrUJYj8/KxSCsBXEOdZbB8BgbasvsG/g05x/1bWPJmg6JFKUljId7HsbDWLCwi8gVGBjujRqE9UCmlePjXDdYtCdIG/iZNrwe6gpLjnXCKlZU/xXP9RjxjAUL7VraKmMZzTjCmpKDkA3eqswPw6KzO7ScUhmeJrwbLD4BgmOdMGFJz8NaQFiknC1Te+BeLltmzr0tuMQs+AflLHz+arnMByGr5XIav/wCxLX7FurlssHsrOUMcNDSniapOyw5r/MyTFbJ6T2e7FZQWGGrUJtbHBXHDRYrz0q4TRY0Ws/Eg90brQiJBJQLrBSjrJNXoXWFTC/Fg91HPHfGYqRcYFljnTBJNZPNn0ePeO6MxUi5wBLzIeRhaANDhmtauEsXtS8G1iwP3muFCyvZkiOe7JcCKyeCQ3GS2lm1HgpYK04PnkRYYqKNvAwZFhgPYoLOdY7njkiMIWdYqyL452TYtKw5HrdG625AjCNHWHKV0otWiP4ZrudiMO024rkzFiPlCEv6VqHJChtWU87xuI147gbEOHKExYdUCjRZ4ZJCtcSIx81demcsRsoRFhtsKuTHcMc6HNaoEc+dsRgpJ1h8lk2BsU74arZGjXjuCsVoOcHiY51wFoQMw5JumpnbgDVXnCl6zzOPLydYfKyjkIeRwEqKRstlgUhIOeNCt7P3gu3x5QSLGw763j8jgGVfIOI8xxNSzriMxBjLY8aUAyzeZBE1lDVsw7JWtTmPeELKGROuzhq5OmZcOcCSPvsoDIdks5lsEv5uq0r0sCr2rz+oHGBtirDwpqLtsODfK8IXejuOtULKGROzfEc6jMeTAywR9H9hu2ckr1/EwuVq5LCmoHO3jXWDaRiW2AVEniWjgjUtYDkuiQ8nY1zZhLYU2raaYVis61DCWsPmJDniWY8cFgx0t62dTQE1DIs7SVVcEBIRLWvE4+QuDSdjTAtYU1JhpTkEi/UcOlFfhe+dkbDkiKcUMawVrII5y00eTEOwmE2i0HmdqGAlp4VPazliWBlcQ5SxTcAE0hAsa/F7NK07VesFf0jNwXgIJV9cdCPiis1PHkhDsCo84B9RuGcEq9Zz8XyHEU8o+WKap17fVbmzJqAGYVlO0uhYQfWWIx6HJfGh5Itpk05UbQGyUMzSQVi8vEbjJBWCblYYDw5zPGFkiyvPzEYtpD25g7BkoqEsfneH9XfxnGF3aRjZ4srifsOlNY2vlwyqAVia2J74KrKekEmuaqtGCctKND068mgNwJJp/hCZkZVEl1ZSzvEMj3jCyBYTrgXk28RCaeEHYMnSej+icaHUC25qrQ/NtYaRLSZcLrm9tVVZE/t6A2oAlljY/ON01LCeiTeIDm0CDiFXXBt81QYuvA3D8dAPKyVc+69b0ZnvTC/FApGhJfEh5IpL7L3A7jAMx0M/LDbWUQn5b8TlCkY8+3zEMzTHE0KumBbF+ndSDedNMf2w2FgHYN0Pb6eAs1pJ103AIeSKCRcXsqaqLhd+BlI/rAq9ppO/TUcNK2mNeIyoYK3IxKwl8oHUB8u2hi1aUihpPAy+9ih4prgWNjfFqvfV4qrn+4vGUx8sa/H7LcBK/sgfNuguDZ6pqNQHi411FKJH6HHgaiaTbqva7ozFSPXBYpcU8iJis4HRkpuApyYRFh/r6DDWuQVY1gKR1UmEJcc6kcyuDsJq/vMf3Iifn0RYFX5tP/KxDqXVeiZ+MiE9gbDEtVdRza72qyVHPKXJgyXfDfg8SveMxarVEr+MsDB5sOS8znTU1jtX82/8gfOpiYMlBk8/RrUgZAiWXNVmTBosa14ngp0CzpL7eJYmDRbz/Ch0v87tlKyWHPFsTRqsiDb6esFqyjme8mTB0u7xK7cx1hFyHPHcRrbnKuvjvD5yQBIWW/yuk0gWvzvLNuIpOsOqZC2V1+fTZTxI522vG4DrfC1yrczipVfodF6Jn+LLCIyySIO2NbVSWdO0nMHq0myWveEgzW8vuTu+JCz+UiMFnaS3pVZSLBCxz/HYPl1fW1axmozsNo+AFhr3wlmeHvpeSLnnLHXPtnQVi8SWPK2LJPAG6xPYFjfX+t62Ij/ArIA1fYvVMOm0qs0TVjmTprmqsAjYjaZYhuYQYsag+VmnsFL0TflTBTJFD6oa44Bz4JAMxluwwYIbcxl2ma9h2EzjpKNhlTQBKyeq8OvbYwW9rtOLXm2wCpVKpYavt5qDA/qWYCwMK7LVINVEQuzLQli40BrXJ29QWAMv8Cto1PDGcJwXq+WYn8UGCyt0ISv2W8p2VO45ELBk0Yt+XscOa/or/tgZR1hUGbEmdFG842lDxkrJ2kRhrfJMak6w6mxZY1oErLJ3GtlgUU8xrpzHl2jZpspFGylg8TlI5dbGOpRWMvla/NB1ygcsXC9IW605Dd/bbfTDws6i4AArR2ns54QvCvc7FodhEV6WsLZm1taw7ROLGjgs+ioq1IvbhJWkm4AZLMMHrFnxbQOXUoq38BLWMm20hmAhwznKV7x9LUGr5RCsFK3Gi6KuG+JVSBKWbazTvFVYD4XnYckHLPkaMWi91tK8te+DVRmGZbASgi/PXZWwlhxgsXnsbV4b6YKJSh8sa17nloY6Qq09fXAfz2hY2EbTLhBAbU3xiRYJC73U80OwxMsPx4U1Wy6Xl/nDBmDxJkwlP0e9xmEQlnzRa2osWNiY46rdlLiHrd62w8rS0EFYeX7PuLCkStZsNoOVYmMdJcrF7y6whjcBe8LaWFgtaQm+hmEb+7dl3gAjrJXl4gr/yRS8a3l5eYbns5DjJoBvWCmrkWKwWHOv0Be43mo9bCanxY/Fro4Fi6sqbjHQcqff/JzV1WeJZcHzXayboub6hbWUsFbRM1hLAta/7t+//z/3b1MP98SvNfiAxT89/ogFdbNu2WGl8mQYVlqYkj5hYW+REwuxGCw51rlLZceBtTEzk5b9UZb2/WnmEUdY+AtE29ZdcFZk1bAi+k+fsNAy1eReFgpLLLh0/7npyKRbz8yPA6tOKwZrRGqsTFXZYE428PIuWwO/IRseP7BqOOJJWQssKSzbZo0QfjPG7y/MCM2OA2uFUaEZwGzeo8ZWdhSshHSr+IEFaWglm9+LwgpnG1BgjQkLax9tlrDt1bSUxph5wVqzXm07FixeeoyBJeGTCGuF1ynba5IWvGHlrFlRPyXLEZbnT6/dmrbHhYVeLnSilCEgn8+j3ZX3hLVt9Yq0oeMzpAnXsSF3yjjCCmMJYXCVx4XFf98QXaN0oMPMAg9YVfvGX2Gd0vtnnL0OfKRdrNf7VoQzWNpqWK9r+WSty9UhgyHDsEq0Hs7wAkbYbxK5w1pM2H+bIiM6RvRvzQ/DWki4bnyVntL03crZrewCCy3FGn3nNu2q0Pmy6AGr3vcaDIydh/tmuJd5ANZsyiqGpXS67y3eE/DTyMOw0IFXxxaF4WBt9jAsrZwDpTEiO8zlMO9YhFM5uhttvR9Wqlyml0X75txmfVYahGVIWHIrXBWrkiYbYtp/YRNk+00Fa3bHvvwL6S7KGV3qaxma3bF+NGwCYeUNg1WGe1UjzcrOctpI1+DftoxRIjXDSM/03cU0ZR0aBqO7ZgCZcp6NhLbgMqZTpREyG5t9afS9IGkCYH0+imH5UAzLh2JYPhTD8qEYlg/FsHwohuVDMSwfimH5UAzLh2JYPhTD8qEYlg/FsHwohuVDkwVLwUWVOu5tUBSVqKZOVB3+4jtO4C+cEBVOFFUx4QKe6KoJN6kYopsmj6CbOPGuwx0YB3fTwh/2z6RpiR22kw2LkL+QR48eY+4VxdTVw91HX6uQa0CnmjtHj74xGTKi7OzufAWo4LpO9h/t7sAxIlP1r3d2D5GHCdTVg104UXW8XTW/Pdo9xLRUF1STBgvy9LTT6H7/nYmIzrudTqf7ZF/HAnPSg5PemWkCQ/Wk22l0uscq6qvjHpz89UTFu/fPaMg5xFH/UjjrNRqd00sodar6+BpTu3mHUL8QWAo5arcbjd65qb69aDTaoE73EkrVRRtPGo2bp0Q9etNgJ6dHRH16w07aF0cqESeNix1Vvew2OjTk+tBUz3v0uNG4vvpSYKH2fzrrQIFodzD/B1dneAjH7Yudx1dP2ggDQ94evL1GqhC1fX31zVuA2ekgme+vDh4Jsu2zq2+RLCQB/x3/dPDxBg56T1TVeenV5MGCinb4BoB0eh+wrJHDU2TX/Q3ae5XsQNGB2viUtu5Pu8ih+9HEmvW0i9FudrFTIFCOIIGbX03oI/QTDOi8uaJN+/9CzTwlLoVr8mCpyOvX8/NdRKBAb6dfXZ7/m7BWXic75+c7tEfEru7wEk502nMSdef88hAuYkNvqke/0ROagPnv88srbOKxz1A/fnisu7TxkwcLSwYaAAR7PrQBaK8PpQf7MZX1+hgKHPCAQmSdJzUbFOwHaSza4mMck7AQhM9sD/1LgXWHimH5UAzLh2JYPhTD8qEYlg/FsHwohuVDMSwfimH5UAzLhz5DWP8PfXROoFsQ0nkAAAAASUVORK5CYII="
+                    height=222>
+                </div>
+                <div class=content>
+                    <h2>Robby Gaude</h2>
+                    <p>Student at Operation Spark</p>
+                    <section class=intrests>
+                        <h2>Interests</h2>
+                        <ul>
+                            <li>Gaming</li>
+                            <li>Improving</li>
+                            <li>Knowing how things work</li>
+                        </ul>
+                    </section>   
+
+                </div>                
+
+            </main>
+        </div>
+    </body>
+</html>
